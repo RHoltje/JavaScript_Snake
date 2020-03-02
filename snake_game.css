@@ -1,0 +1,7 @@
+* {
+	background-color: rgb(140, 235, 114);
+}
+
+#snakeCanvas {
+	border: solid rgb(8, 101, 15);
+}
