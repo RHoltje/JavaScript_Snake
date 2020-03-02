@@ -4,9 +4,9 @@ var ctx = canvas.getContext("2d");
 
 /*starting position of snake*/
 let snake = [  
-	{x: 50, y: 50},  
-	{x: 40, y: 50},  
-	{x: 30, y: 50},];
+	{x: 100, y: 100},  
+	{x: 50, y: 100},  
+	{x: 0, y: 100},];
 
 drawSnake();
 
@@ -14,8 +14,8 @@ drawSnake();
 function drawSnakePart(snakePart) 
 	{	ctx.fillStyle = 'lightblue';  
 		ctx.strokestyle = 'darkblue';
-		ctx.fillRect(snakePart.x, snakePart.y, 10, 10);  
-		ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);}
+		ctx.fillRect(snakePart.x, snakePart.y, 50, 50);  
+		ctx.strokeRect(snakePart.x, snakePart.y, 50, 50);}
 
 function drawSnake() 
 	{snake.forEach(drawSnakePart);}
